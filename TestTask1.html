@@ -1,20 +1,16 @@
 <!Doctype html>
 <html>
     <script>
-        let userName = prompt("Кто там?", '')
-        if (userName === 'Админ') {
-            let pass = prompt('Пароль?', '')
-            if (pass === 'Я главный') {
-                alert( 'Здравствуйте!' )
-            } else if (pass === '' || pass === null) {
-                alert( 'Отменено' )
-            } else {
-                alert( 'Неверный пароль' )
-            }
-        } else if (userName === '' || userName === null) {
-            alert( 'Отменено' )
-        } else {
-            alert( "Я вас не знаю" )
+        let num=+prompt('Введите число')
+        switch(true){
+            case num===0 :alert('Вы ввели 0')
+            break
+            case num===1 :alert('Вы ввели 1')
+            break
+            case Number.isNaN(num):alert('Дебич')
+            break
+            default:alert('Введите другое число')
+    
         }
         </script>
         </html>
